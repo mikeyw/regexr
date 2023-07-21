@@ -34,7 +34,7 @@ window._native = function () {
 
 		var srv = document.createElement('script');
 		srv.src = jsonUrl;
-		document.getElementsByTagName('head')[0].appendChild(srv);
+		//document.getElementsByTagName('head')[0].appendChild(srv);
 	};
 
 	var carbon = function carbon(e) {
@@ -42,7 +42,7 @@ window._native = function () {
 		srv.src = '//cdn.carbonads.com/carbon.js?serve=' + e['carbonZoneKey'] + '&placement=' + e['placement'];
 		srv.id = '_carbonads_js';
 
-		return srv;
+		//return srv;
 	};
 
 	var sanitize = function sanitize(ads) {
