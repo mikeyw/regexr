@@ -1,5 +1,5 @@
 .doc > section.expression {
-	flex: 0 $title-height+$input-height;
+	flex: 0 calc($title-height + $input-height);
 	
 	> header {
 		background: $theme-color;

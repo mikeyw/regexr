@@ -6,8 +6,8 @@
 	> header {
 		.modelist li {
 			font-size: 1rem;
-			padding-top: $pad*0.275;
-			padding-bottom: $pad*0.275;
+			padding-top: calc($pad*0.275);
+			padding-bottom: calc($pad*0.275);
 
 			&:last-child::after {
 				transition: opacity 1s;
@@ -127,7 +127,7 @@
 			opacity: 0.5;
 			background: rgba($doc-light, 0.75);
 			color: $doc-black;
-			padding: $pad * 0.75 $pad*0.625;
+			padding: $pad * 0.75 calc($pad*0.625);
 			margin-top: $pad * 0.125;
 			font-weight: bold;
 			border-radius: $control-radius;
@@ -141,8 +141,8 @@
 			li {
 				background: $doc-lightest;
 				box-shadow: 0 1px 2px $light-shadow;
-				transition: margin $transition-t*0.5 linear;
-				margin: $pad*0.125 0;
+				transition: margin calc($transition-t*0.5) linear;
+				margin: calc($pad*0.125) 0;
 				display: inline-block;
 				width: 100%;
 
@@ -156,7 +156,7 @@
 
 				header {
 					@extend %title;
-					padding: $pad*0.5 $pad*0.75;
+					padding: calc($pad*0.5) calc($pad*0.75);
 
 					input.name {
 						color: $doc-darker;
@@ -197,7 +197,7 @@
 
 				article {
 					border-top: solid 1px $doc-lighter;
-					padding: $pad*0.5 0 $pad*0.5 $pad*0.75;
+					padding: calc($pad*0.5) 0 calc($pad*0.5) calc($pad*0.75);
 					display: none;
 					height: 6em;
 					align-items: stretch;
@@ -206,7 +206,7 @@
 						background: $pass-color;
 						width: 0px;
 						outline: solid 1px $pass-color;
-						margin: $pad*0.25 $pad*0.875 $pad*0.25 $pad*0.375;
+						margin: calc($pad*0.25) calc($pad*0.875) calc($pad*0.25) calc($pad*0.375);
 					}
 
 					.editor {
@@ -230,7 +230,7 @@
 					outline: $selected-stroke;
 					background: $doc-white;
 					box-shadow: 0 2px 3px $dark-shadow;
-					margin: $pad*0.75 0;
+					margin: calc($pad*0.75) 0;
 
 					&:first-child {
 						margin-top: 0;
@@ -288,7 +288,7 @@
 		display: inline-block;
 		color: $doc-light;
 		font-style: italic;
-		margin-top: $pad*0.75;
+		margin-top: calc($pad*0.75);
 	}
 	
 	i {

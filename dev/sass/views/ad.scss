@@ -14,7 +14,7 @@
   }
   
   .native-img {
-	margin-right: $pad*0.75;
+	margin-right: calc($pad*0.75);
 	max-height: 40px;
 	max-width: 27%;
 	border-radius: 3px;
@@ -22,7 +22,7 @@
   
   .native-flex {
 	display: flex;
-	padding: $pad*0.75;
+	padding: calc($pad*0.75);
 	text-decoration: none;
   
 	flex-flow: row nowrap;

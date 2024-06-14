@@ -18,7 +18,7 @@
 		border: 0;
 		
 		tr:nth-child(odd) td {
-			background: mix($doc-lighter, $doc-lightest, 40);
+			background: mix($doc-lighter, $doc-lightest, 40%);
 		}
 		
 		tr.match td {
@@ -64,12 +64,12 @@
 		@extend %selected-token;
 	}
 	
-	.group-1 { background: hsla(60, 100, 50, $details-group-alpha); }
-	.group-2 { background: hsla(120, 100, 50, $details-group-alpha); }
-	.group-3 { background: hsla(230, 100, 70, $details-group-alpha); }
-	.group-4 { background: hsla(280, 100, 60, $details-group-alpha); }
-	.group-5 { background: hsla(-10, 100, 60, $details-group-alpha); }
-	.group-0 { background: hsla(30, 100, 50, $details-group-alpha); }
+	.group-1 { background: hsla(60, 100%, 50%, $details-group-alpha); }
+	.group-2 { background: hsla(120, 100%, 50%, $details-group-alpha); }
+	.group-3 { background: hsla(230, 100%, 70%, $details-group-alpha); }
+	.group-4 { background: hsla(280, 100%, 60%, $details-group-alpha); }
+	.group-5 { background: hsla(-10, 100%, 60%, $details-group-alpha); }
+	.group-0 { background: hsla(30, 100%, 50%, $details-group-alpha); }
 	.group-0, .group-1, .group-2, .group-3, .group-4, .group-5 { outline: 0.5px solid rgba($doc-black, 0.25); }
 	
 }

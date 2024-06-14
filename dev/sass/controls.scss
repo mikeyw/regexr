@@ -127,7 +127,7 @@ svg.icon {
 	margin: 0; // Firefox injects a 16px margin for some reason without this.
 	
 	> * {
-		margin-left: $pad*0.25;
+		margin-left: calc($pad*0.25);
 	}
 }
 
@@ -262,7 +262,7 @@ svg.icon {
 		color: $dark;
 		float: right;
 		display: inline-block;
-		padding-left: $pad*0.5;
+		padding-left: calc($pad*0.5);
 	}
 	
 	code {

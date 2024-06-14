@@ -29,7 +29,7 @@
 	.row, .list > li {
 		display: flex;
 		flex: 0 0 auto;
-		padding: $pad/2;
+		padding: calc($pad/2);
 		align-items: center;
 		justify-content: center;
 		border-bottom: 1px solid rgba($white, 0.06);
@@ -37,7 +37,7 @@
 		color: $light;
 		
 		> * {
-			margin: 0 $pad/2;
+			margin: 0 calc($pad/2);
 		}
 		
 		input, .label {
@@ -59,7 +59,7 @@
 			align-items: center;
 			cursor: pointer;
 			margin: 0;
-			padding: $pad/2 0;
+			padding: calc($pad/2) 0;
 			
 			.icon {
 				flex: 0 0 auto;
@@ -75,7 +75,7 @@
 		}
 
 		.close.icon {
-			padding: $pad*0.75 $pad;
+			padding: calc($pad*0.75) $pad;
 			margin: 0;
 		}
 	}
@@ -102,7 +102,7 @@
 				color: $light;
 				
 				&:hover:not(.inactive) {
-					background: mix($dark, $darker, 50);
+					background: mix($dark, $darker, 50%);
 					.token, .rating, .icon { color: currentColor; }
 				}
 				
@@ -136,7 +136,7 @@
 					}
 					.icon.copy {
 						padding: $pad; /* easier to click */
-						margin: -$pad 1.5*$pad -$pad -$pad;
+						margin: (-$pad) calc(1.5*$pad) (-$pad) (-$pad);
 						color: $dark;
 						&:hover {
 							color: $white;
@@ -170,7 +170,7 @@
 
 					.favorites.icon {
 						color: $theme-color;
-						padding: 0 $pad*0.25;
+						padding: 0 calc($pad*0.25);
 					}
 				}
 			}
@@ -216,7 +216,7 @@
 		}
 		
 		> .search {
-			padding: 0 $pad/2;
+			padding: 0 calc($pad/2);
 			
 			input {
 				background: none;
@@ -288,11 +288,11 @@
 		> .hello {
 			flex: 0 0 0;
 			padding: 0;
-			border: $pad*0.25 solid $black;
+			border: calc($pad*0.25) solid $black;
 			background: $black;
 
 			.noad {
-				padding: $pad*0.75;
+				padding: calc($pad*0.75);
 				color: $mid;
 
 				b {
@@ -311,12 +311,12 @@
 			@extend %link;
 			text-align: left;
 			background: $darker;
-			padding: $pad/4 $pad/2;
+			padding: calc($pad/4) calc($pad/2);
 			color: $theme-color;
 		}
 
 		tr + tr > th {
-			border-top: $pad/2 solid $darkest;
+			border-top: calc($pad/2) solid $darkest;
 		}
 
 		td {

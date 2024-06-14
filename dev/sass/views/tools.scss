@@ -7,8 +7,8 @@
 		@extend %link;
 		// this is a bit hacky, but lets us reuse the help icon everywhere.
 		position: absolute;
-		right: $pad*0.25;
-		transform: translate(0, -50%) translate(0, $input-height/2);
+		right: calc($pad*0.25);
+		transform: translate(0, -50%) translate(0, calc($input-height/2));
 		padding: $pad;
 		color: rgba($doc-black, 0.25);
 		z-index: 10;

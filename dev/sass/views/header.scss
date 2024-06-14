@@ -11,7 +11,7 @@
 	.logo {
 		flex: none;
 		font-size: 1.125rem;
-		margin-top: $pad/16;
+		margin-top: calc($pad/16);
 		color: $theme-color;
 		width: 1.5em;
 		height: 1.5em;
@@ -25,7 +25,7 @@
 		max-width: 20em;
 
 		.name {
-			margin: 0 $pad*0.25 0 $pad*0.5;
+			margin: 0 calc($pad*0.25) 0 calc($pad*0.5);
 			text-overflow: ellipsis;
 			white-space: nowrap;
 			overflow: hidden;
@@ -35,7 +35,7 @@
 			flex: none;
 			color: $dark;
 			width: 1em;
-			margin-right: $pad*0.5;
+			margin-right: calc($pad*0.5);
 		}
 	}
 
@@ -110,8 +110,8 @@
 #tooltip-signin {
 	ul.list li {
 		@extend .button;
-		margin: $pad*0.25 0;
-		padding: $pad*0.625;
+		margin: calc($pad*0.25) 0;
+		padding: calc($pad*0.625);
 		color: $lightest;
 
 		opacity: 0.85;
@@ -128,7 +128,7 @@
 		}
 
 		>svg.icon {
-			margin-right: $pad*0.625;
+			margin-right: calc($pad*0.625);
 		}
 	}
 
@@ -160,7 +160,7 @@
 		color: $mid;
 
 		.distractor {
-			margin-right: $pad/2;
+			margin-right: calc($pad/2);
 		}
 	}
 
